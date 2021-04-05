@@ -16,14 +16,15 @@ public class ChatBot {
 	private SentimentAnalyzer sentiment;
 	private Stemmer stemmer;
 	private PersonFinder personFinder;
-  
+	private Definitions definition;
+	
 	public ChatBot() {
 		//initializing rules with one tuple
-		// TODO: find a better way to get new entries here (maybe from json file?)
 		rules = new Rule();
 		sentiment = new SentimentAnalyzer();
 		stemmer = new Stemmer();
 		personFinder = new PersonFinder();
+		definition = new Definitions();
 	}
 
 	/*
@@ -33,6 +34,7 @@ public class ChatBot {
 	public String stemInput(String input) {
 		//initialize final result
 		String output = "";
+	
 		//Create an array of words from the input string by splitting them by spaces
 		String[] inputArray = input.split("\\s+");
 		//loop through the words in the array
@@ -50,7 +52,21 @@ public class ChatBot {
      * takes String outputs "intelligent" answer
      */
     public String getResponse(String input){
-    	
+    	// check if the input contains who is, or what is... if it does get response from definiton
+    	String output  = "";
+    	if(input.contains("who is ")) {
+    		// remove "who is" and send it to get wiki definiton
+    		output = definition.getDefinition(input.replace("who is", ""));	
+    		System.out.println(output);
+    		
+    	}else if(input.contains("what is")) {
+    		// remove "what is" and send it to get wiki definiton
+    		output = definition.getDefinition(input.replace("what is", ""));
+    	}
+    	// if output is not null and has been changed then return output
+    	if(output != null && !output.equals("") ) {
+    		return output;
+    	}
     	String[] words = input.split("\\s+");
     	// if first sentence in sentence is addressing bot
     	if(words[0].equals("you")) {
