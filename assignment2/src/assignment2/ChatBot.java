@@ -17,7 +17,7 @@ public class ChatBot {
 	private Stemmer stemmer;
 	private PersonFinder personFinder;
 	private Definitions definition;
-	
+	private Wolfram wolfram;
 	public ChatBot() {
 		//initializing rules with one tuple
 		rules = new Rule();
@@ -25,6 +25,7 @@ public class ChatBot {
 		stemmer = new Stemmer();
 		personFinder = new PersonFinder();
 		definition = new Definitions();
+		wolfram = new Wolfram();
 	}
 
 	/*
@@ -34,7 +35,6 @@ public class ChatBot {
 	public String stemInput(String input) {
 		//initialize final result
 		String output = "";
-	
 		//Create an array of words from the input string by splitting them by spaces
 		String[] inputArray = input.split("\\s+");
 		//loop through the words in the array
@@ -52,6 +52,9 @@ public class ChatBot {
      * takes String outputs "intelligent" answer
      */
     public String getResponse(String input){
+    	// save a unstemmed version of input for wolfram class if needed
+    	String unStemmedInput = input;
+    	
     	// check if the input contains who is, or what is... if it does get response from definiton
     	String output  = "";
     	if(input.contains("who is ")) {
@@ -98,6 +101,12 @@ public class ChatBot {
         		}
         		return rules.get(keywords);
         	}
+        }
+        // if no good answer found check Wolfram for an answer
+        String wolfOutput = wolfram.getWolframSimpleResponse(unStemmedInput);
+        if(wolfOutput != null) {
+        	// if wolfram has answer output it
+        	return wolfOutput;
         }
         return notUnderstood();
     }

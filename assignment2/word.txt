@@ -5,7 +5,7 @@ what' up
 what up
 hey
 .Hi, welcome to GymBot! How can I help you?
-time
+timeF
 timing
 hours
 days
@@ -34,7 +34,6 @@ list
 .We carry an extensive selection of dumbbells and most modern weight training machines. We have a cardio section with twenty different treadmills. If you would like to know more, check out our website.
 new equip 
 equip new 
-new
 .Our cardio section was just updated with new treadmills!
 equip
 .Our gym includes world class equipment personally used by Sylvester Stallone.
