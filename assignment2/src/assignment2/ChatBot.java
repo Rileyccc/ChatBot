@@ -18,6 +18,8 @@ public class ChatBot {
 	private PersonFinder personFinder;
 	private Definitions definition;
 	private Wolfram wolfram;
+	private IMDb imdb;
+	private Weather weather;
 	public ChatBot() {
 		//initializing rules with one tuple
 		rules = new Rule();
@@ -26,6 +28,9 @@ public class ChatBot {
 		personFinder = new PersonFinder();
 		definition = new Definitions();
 		wolfram = new Wolfram();
+		imdb = new IMDb();
+		weather = new Weather();
+		
 	}
 
 	/*
@@ -52,6 +57,20 @@ public class ChatBot {
      * takes String outputs "intelligent" answer
      */
     public String getResponse(String input){
+    	// checks to see if the user is asking about the weather
+    	if(input.contains("what's the current weather in ")) {
+    		String test = weather.getWeatherResponse(input.replace("what's the current weather in ", ""));
+    		if(test != null) {
+    			return test;
+    		}
+    	}
+    	// checks to see if the user is asking about a movie
+    	if(input.contains("have you seen")) {
+    		String test = imdb.getIMDbResponse(input.replace("have you seen", ""));
+    		if(test != null) {
+    			return test;
+    		}
+    	}
     	// save a unstemmed version of input for wolfram class if needed
     	String unStemmedInput = input;
     	
