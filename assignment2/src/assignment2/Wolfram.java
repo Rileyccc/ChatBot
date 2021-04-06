@@ -29,7 +29,7 @@ public class Wolfram {
 		}
 		
 		try {
-			System.out.println(HOST + "?appid=" + APIID  + "&" + query);
+			
 			HttpResponse<String> httpResponse = Unirest.get(HOST + "?appid=" + APIID + "&" + query).asString();
 			// check staus of request 
 			
@@ -48,7 +48,7 @@ public class Wolfram {
 			}
 			
 		} catch (UnirestException e) {
-		
+			//return null
 		}
 		return null;
 	}
