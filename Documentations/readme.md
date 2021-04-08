@@ -51,7 +51,7 @@ This folder will contain all documentations. All documentation requirements for 
 
 4. Openweathermap Api 
    
-   This API allows for access to various weather infromation. The addition of this API allows questions which start with "whats the current weather in city (or city, country tag    ex CA = canada). The Bot will return the weather description and the current temperture. 
+   This API allows for access to various weather infromation. The addition of this API allows questions which start with "whats the current weather in city (or city, country tag ex CA = canada)". The Bot will return the weather description and the current temperture. 
 
 ![alt text](https://github.com/Rileyccc/ChatBot/blob/main/Documentations/WeatherAPI%20example.png?raw=true)
 
