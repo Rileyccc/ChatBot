@@ -30,11 +30,23 @@ This folder will contain all documentations. All documentation requirements for 
 12. Added API's
 
 # Added API's#
-1. Wikipedia API. this API allows access to wikipedia's extensive database of knowledge. The addition of this API allows for questions which start with "who is person" and "what is thing" and if something in wikipedia database matches the first two sentences of the wikipedia article will be outputed as an answer
+1. Wikipedia API
+
+   This API allows access to wikipedia's extensive database of knowledge. The addition of this API allows for questions which start with "who is person" and "what is thing" and    if something in wikipedia database matches the first two sentences of the wikipedia article will be outputed as an answer
 
 ![alt text](https://github.com/Rileyccc/ChatBot/blob/main/Documentations/WikipediaAPI%20example.png?raw=true)
+2. Wolfram Short Answers API
 
 
+![alt text](https://github.com/Rileyccc/ChatBot/blob/main/Documentations/WolframAPI%20example.png?raw=true)
+3. IMDb Api
+   
+   
+![alt text](https://github.com/Rileyccc/ChatBot/blob/main/Documentations/IMDbAPI%20example.png?raw=true)
+
+4. Openweathermap Api
+
+![alt text](https://github.com/Rileyccc/ChatBot/blob/main/Documentations/WeatherAPI%20example.png?raw=true)
 
 # Level 0 Data Flow Diagram #
 
