@@ -38,18 +38,20 @@ This folder will contain all documentations. All documentation requirements for 
 
 2. Wolfram Short Answers API
 
-   This API allows access to Wolfram alpha short answers. The addition of this API allows answers to various questions about facts, mathematics and more. If the program can find no in house answer it will check to see if Wolfram has an answer to this question.
+   This API allows access to Wolfram alpha short answers. The addition of this API allows answers to various questions about facts, mathematics and more. If the program can find    no in house answer it will check to see if Wolfram has an answer to this question.
 
 ![alt text](https://github.com/Rileyccc/ChatBot/blob/main/Documentations/WolframAPI%20example.png?raw=true)
 
 3. IMDb Api
-   This API allows access to IMDb database of movies. The addition of this API allows questions which start with "have you seen movietitle" and if a move is found with   
-   "movietitle" the bot will return "of course!"  followed by the plot of the movie.
+    
+    This API allows access to IMDb database of movies. The addition of this API allows questions which start with "have you seen movietitle" and if a move is found with   
+    "movietitle" the bot will return "of course!"  followed by the plot of the movie.
    
 ![alt text](https://github.com/Rileyccc/ChatBot/blob/main/Documentations/IMDbAPI%20example.png?raw=true)
 
 4. Openweathermap Api 
-   This API allows for access to various weather infromation. The addition of this API allows questions which start with "whats the current weather in city (or city, country tag ex CA = canada). The Bot will return the weather description and the current temperture. 
+   
+   This API allows for access to various weather infromation. The addition of this API allows questions which start with "whats the current weather in city (or city, country tag    ex CA = canada). The Bot will return the weather description and the current temperture. 
 
 ![alt text](https://github.com/Rileyccc/ChatBot/blob/main/Documentations/WeatherAPI%20example.png?raw=true)
 
