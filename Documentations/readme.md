@@ -16,6 +16,7 @@ This folder will contain all documentations. All documentation requirements for 
 
 (Assignment 3)
 
+
 9. Level 0 Data Flow Diagram (Explanation Within ReadMe)
 10. Level 1 Data Flow Diagram  (Explanation Within ReadMe)
 11. Explanation of Additions in Assignment 3
@@ -23,6 +24,17 @@ This folder will contain all documentations. All documentation requirements for 
 5. Limitations with Examples
 6. 5 Features that Could b extracted and shared with others as an API
 7. Automated Unit Testing
+
+(Individual Project)
+
+12. Added API's
+
+# Added API's#
+1. Wikipedia API. this API allows access to wikipedia's extensive database of knowledge. The addition of this API allows for questions which start with "who is person" and "what is thing" and if something in wikipedia database matches the first two sentences of the wikipedia article will be outputed as an answer
+![alt text](https://github.com/COSC310-Project-Group-8/AssignmentTwo/blob/main/Documentations/wikipediaAPI%20example.png?true)
+
+
+
 # Level 0 Data Flow Diagram #
 
 ![alt text](https://github.com/COSC310-Project-Group-8/AssignmentTwo/blob/main/Documentations/Level%200%20Data%20Flow%20Diagram.png?raw=true)
