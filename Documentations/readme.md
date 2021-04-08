@@ -31,7 +31,8 @@ This folder will contain all documentations. All documentation requirements for 
 
 # Added API's#
 1. Wikipedia API. this API allows access to wikipedia's extensive database of knowledge. The addition of this API allows for questions which start with "who is person" and "what is thing" and if something in wikipedia database matches the first two sentences of the wikipedia article will be outputed as an answer
-![alt text](https://github.com/COSC310-Project-Group-8/AssignmentTwo/blob/main/Documentations/wikipediaAPI%20example.png?true)
+
+![alt text](https://github.com/Rileyccc/ChatBot/blob/main/Documentations/WikipediaAPI%20example.png?raw=true)
 
 
 
