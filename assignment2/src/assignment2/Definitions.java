@@ -21,7 +21,7 @@ public class Definitions {
 		try {
 			// extract the leading paragraph from wikipedia
 			sentences = wiki.getTextExtract(input);
-		}catch(NullPointerException ex) {
+		}catch(Exception ex) {
 			return null;
 		}
 		return getSentences(sentences);
